@@ -5,12 +5,14 @@ AI 활용 과제(중간평가) — 문서 작성 규칙 자동 점검 서비스 
 
 ## 진행 현황
 
-- 현재 작업: 명세 확정, 코드 미착수
+- 현재 작업: 프로토타입 구현 완료, Pages 배포
+- 구조
+	- `src/checker.ts` 판정 로직 (명세 4절) · `src/checker.test.ts` 6절 검증
+	- `src/rules.ts` 규칙 9개 · `src/samples.ts` 샘플 3종 · `src/qa.ts` 규칙 질의 모의 응답
+	- `src/store.tsx` localStorage 상태 · `src/pages/*` 화면 7개 (해시 라우팅)
 - 다음 단계
-	- Vite + React + TypeScript + Tailwind 프로젝트 구성
-	- 명세서 3절 화면, 4절 판정 로직 구현
-	- 6절 검증 기준 확인
-	- GitHub Actions → GitHub Pages 배포 (vite `base: '/doc-rule-checker/'`)
+	- 배포 URL 시크릿 창 동작 확인
+	- 화면 캡처 → PPT
 - 대기·보류
 	- 통계 대시보드 — 범위 제외
 	- PPT 발표자료 — 화면 완성 후 캡처 기반 별도 작성

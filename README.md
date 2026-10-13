@@ -7,4 +7,15 @@
 - 문맥 규칙: AI 판정 시연 (권고, 패턴 기반 모의)
 - 모든 데이터 가상
 
-서비스 링크: (배포 후 기재)
+서비스 링크: https://hjaeho95.github.io/doc-rule-checker/
+
+## 실행
+
+```bash
+npm install
+npm run dev     # 개발 서버
+npm test        # 판정 로직 검증 (샘플 3종 기대 건수, 수정 흐름)
+npm run build   # dist/ 생성
+```
+
+main 푸시 시 GitHub Actions가 테스트·빌드 후 Pages 배포
