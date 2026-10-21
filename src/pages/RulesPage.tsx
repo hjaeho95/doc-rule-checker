@@ -109,12 +109,12 @@ export default function RulesPage() {
                   <span className="font-medium text-slate-600">이유</span> {r.reason}
                 </div>
               </div>
-              <div className="flex flex-wrap items-start gap-1 sm:flex-col sm:items-end">
-                {r.severity.split(' / ').map((s) => (
-                  <SeverityBadge key={s} severity={s} />
-                ))}
-                {r.judge.split(' / ').map((j) => (
-                  <JudgeBadge key={j} judge={j} />
+              <div className="flex flex-col gap-1 sm:items-end">
+                {r.severity.split(' / ').map((sev, i) => (
+                  <div key={sev} className="flex items-center gap-1">
+                    <SeverityBadge severity={sev} />
+                    <JudgeBadge judge={r.judge.split(' / ')[i]} />
+                  </div>
                 ))}
               </div>
             </li>
