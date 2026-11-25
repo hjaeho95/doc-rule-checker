@@ -1,0 +1,17 @@
+[
+  { "id": 1, "source": "샘플1 시험결과보고서", "rule": "C-03", "text": "시험 중 통신이 끊기는 현상이 발생하여 원인을 분석하였습니다.", "expected": true },
+  { "id": 2, "source": "샘플1 시험결과보고서", "rule": "C-04", "text": "SBC 재부팅 후 정상 동작을 확인하였고 로그는 서버에 업로드함", "expected": true },
+  { "id": 3, "source": "샘플1 시험결과보고서", "rule": "C-03", "text": "SBC 재부팅 후 정상 동작을 확인하였고 로그는 서버에 업로드함", "expected": false },
+  { "id": 4, "source": "샘플1 시험결과보고서", "rule": "C-06", "text": "기존 메시지 형식 현행 유지 / 이유: 협의 결과", "expected": true },
+  { "id": 5, "source": "샘플2 주간회의록", "rule": "C-06", "text": "통신 타임아웃 500ms 유지 / 이유: 타 장비 응답 지연 최대 420ms", "expected": false },
+  { "id": 6, "source": "샘플2 주간회의록", "rule": "M-01", "text": "인터페이스 시험 결과 공유 / 담당: 작성자A / 기한: 다음 주쯤", "expected": true },
+  { "id": 7, "source": "샘플2 주간회의록", "rule": "M-01", "text": "타임아웃 설정값 문서 반영 / 담당: 작성자B / 기한: 2026-10-10", "expected": false },
+  { "id": 8, "source": "샘플3 통신시험 절차서", "rule": "P-02", "text": "전원 인가 전 케이블 연결 확인 — 오결선 시 장비 손상", "expected": false },
+  { "id": 9, "source": "샘플3 통신시험 절차서", "rule": "P-02", "text": "시험 프로그램 실행 속도 느림, 참고", "expected": true },
+  { "id": 10, "source": "샘플3 통신시험 절차서", "rule": "C-03", "text": "가상레이더 통신 모듈 기능 시험 절차 정의", "expected": false },
+  { "id": 11, "source": "샘플4 패턴 한계 사례", "rule": "C-04", "text": "수신 지연 현상은 버퍼 크기 부족이 원인으로 판단되어 설정값을 늘린 뒤 재시험을 진행했으며 결과는 정상임", "expected": true },
+  { "id": 12, "source": "샘플4 패턴 한계 사례", "rule": "C-04", "text": "송신 모듈 점검 완료, 이상 없음", "expected": false },
+  { "id": 13, "source": "샘플4 패턴 한계 사례", "rule": "C-03", "text": "원인 상세 분석은 다음 시험에서 진행할 예정입니다.", "expected": true },
+  { "id": 14, "source": "샘플4 패턴 한계 사례", "rule": "C-06", "text": "재시험 일정 1주 연기 / 이유: 장비 사정", "expected": true },
+  { "id": 15, "source": "샘플4 패턴 한계 사례", "rule": "C-06", "text": "타임아웃 500ms 유지 / 이유: 검토 결과 실측 최대 지연 420ms로 기준 이내", "expected": false }
+]

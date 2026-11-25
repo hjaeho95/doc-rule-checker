@@ -1,0 +1,15 @@
+{
+  "name": "doc-rule-checker AI 모델 실행",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  // Kanana 2.1B를 CPU로 돌리려면 메모리 16GB 필요 → 4코어 머신 선택
+  "hostRequirements": { "cpus": 4, "memory": "16gb" },
+  "postCreateCommand": "pip install --index-url https://download.pytorch.org/whl/cpu torch && pip install -r ai-model/requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    },
+    "codespaces": {
+      "openFiles": ["ai-model/README.md"]
+    }
+  }
+}

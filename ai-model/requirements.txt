@@ -1,0 +1,2 @@
+# torch는 CPU 전용 버전을 따로 설치 (.devcontainer/devcontainer.json 참고)
+transformers>=4.45
